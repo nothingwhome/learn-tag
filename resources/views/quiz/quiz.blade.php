@@ -23,6 +23,9 @@
             background: linear-gradient(135deg, #FFB6B6 0%, #FFD9C0 100%);
             padding: 80px 20px;
             position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
             overflow: hidden;
             min-height: 100vh;
             display: flex;
@@ -58,7 +61,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 40px;
+            gap: 400px;
             position: relative;
             z-index: 2;
         }
@@ -69,7 +72,7 @@
         }
 
         .logo img {
-            height: 60px;
+            height: 150px;
             margin-bottom: 25px;
         }
 
