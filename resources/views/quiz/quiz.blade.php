@@ -27,7 +27,7 @@
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
-            min-height: 100vh;
+            min-height: 80vh;
             display: flex;
             align-items: center;
         }
@@ -73,6 +73,7 @@
 
         .logo img {
             height: 60px;
+            margin-bottom: 25px;
         }
 
         .hero-text h1 {
