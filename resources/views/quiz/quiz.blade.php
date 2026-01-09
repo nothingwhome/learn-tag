@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Aplikasi Pembelajaran Terpadu</title>
     <style>
+        /* CSS MURNI - TANPA FRAMEWORK */
         * {
             margin: 0;
             padding: 0;
@@ -25,15 +23,9 @@
             background: linear-gradient(135deg, #FFB6B6 0%, #FFD9C0 100%);
             padding: 80px 20px;
             position: relative;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
             overflow: hidden;
-            min-height: 50vh;
-            /* display: flex; */
+            min-height: 100vh;
+            display: flex;
             align-items: center;
         }
 
@@ -66,7 +58,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 400px;
+            gap: 40px;
             position: relative;
             z-index: 2;
         }
@@ -74,10 +66,8 @@
         .hero-text {
             flex: 1;
             max-width: 600px;
-            
         }
 
-<<<<<<< HEAD
         .logo img {
             height: 60px;
         }
@@ -87,7 +77,6 @@
             line-height: 1.3;
             color: #000;
             margin-bottom: 30px;
-            font-family: var(--second-family);
             font-weight: 800;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
         }
@@ -198,9 +187,9 @@
     @include('component.navbar')
     <section class="hero-section">
         <div class="container">
-            <div class="hero-text">     
+            <div class="hero-text">
                 <div class="logo">
-                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo iPintar">
+                    <img src="https://camo.githubusercontent.com/4bdce6bd47a87e161c0a9ad6ed6b44399afd6d82bffe59c3da3fd050bc489eeb/68747470733a2f2f6c696e6b74722e65652f6f672f696d6167652f736d6b7461676f6666696369616c2e6a7067" alt="Logo iPintar">
                 </div>
                 <h1>Temukan Pelatihan untuk Tingkatkan Kompetensi Anda</h1>
                 <form id="searchForm" class="search-form">
@@ -218,6 +207,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             const searchForm = document.getElementById('searchForm');
             const searchInput = document.getElementById('searchInput');
+
+            // Handle form submission
             searchForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const searchTerm = searchInput.value.trim();

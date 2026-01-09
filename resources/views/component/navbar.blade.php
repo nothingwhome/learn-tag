@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Navbar - LEARN TAG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 
+    <title>Navbar</title>
 </head>
 <body>
 
 <nav class="navbar">
   <!-- Logo -->
   <div class="logo">
-    <a href="/">
+    <a href="{{ url('/navbar') }}">
       <img src="{{ asset('assets/img/logo.png') }}">
     </a>
   </div>
 
   <!-- Menu -->
   <ul class="nav-menu">
-    <li><a href="/quiz">Quiz Hebat</a></li>
+    <li><a href="{{ url('/') }}">Pelatihan</a></li>
     <li><a href="#">Klinik Pengetahuan</a></li>
     <li><a href="#">Berbagi Pengetahuan</a></li>
   </ul>

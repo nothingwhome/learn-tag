@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('component.footer');
-});
-
-Route::get('/quiz', function () {
     return view('quiz.quiz');
 });
 
@@ -27,4 +23,6 @@ Route::get('/navbar', function () {
 
 
 
-
+// Route::get('/home', function () {
+//     return view('home.index');
+// });
