@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('component.footer');
 });
 
-
-// Route::get('/home', function () {
-//     return view('home.index');
-// });
+Route::get('/quiz', function () {
+    return view('quiz.quiz');
+});
