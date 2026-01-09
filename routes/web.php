@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
+=======
+Route::get('/home', function () {
+    return view('component.navbar');
+});
+
+Route::get('/quiz', function () {
+>>>>>>> 7813c90 (update quiz dan navbar & route)
     return view('quiz.quiz');
 });
 

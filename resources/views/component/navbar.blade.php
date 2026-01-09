@@ -15,14 +15,14 @@
 <nav class="navbar">
   <!-- Logo -->
   <div class="logo">
-    <a href="{{ url('/navbar') }}">
+    <a href="/home">
       <img src="{{ asset('assets/img/logo.png') }}">
     </a>
   </div>
 
   <!-- Menu -->
   <ul class="nav-menu">
-    <li><a href="{{ url('/') }}">Pelatihan</a></li>
+    <li><a href="/quiz">Quiz Hebat</a></li>
     <li><a href="#">Klinik Pengetahuan</a></li>
     <li><a href="#">Berbagi Pengetahuan</a></li>
   </ul>

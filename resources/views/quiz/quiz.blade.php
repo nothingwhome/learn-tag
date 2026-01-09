@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Aplikasi Pembelajaran Terpadu</title>
     <style>
         /* CSS MURNI - TANPA FRAMEWORK */
@@ -27,8 +30,8 @@
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
-            min-height: 80vh;
-            display: flex;
+            min-height: 50vh;
+            /* display: flex; */
             align-items: center;
         }
 
@@ -71,8 +74,13 @@
             max-width: 600px;
         }
 
+<<<<<<< HEAD
         .logo img {
             height: 60px;
+=======
+        .logo #quiz {
+            height: 200px;
+>>>>>>> 7813c90 (update quiz dan navbar & route)
             margin-bottom: 25px;
         }
 
@@ -191,9 +199,9 @@
     @include('component.navbar')
     <section class="hero-section">
         <div class="container">
-            <div class="hero-text">
+            <div class="hero-text">     
                 <div class="logo">
-                    <img src="https://camo.githubusercontent.com/4bdce6bd47a87e161c0a9ad6ed6b44399afd6d82bffe59c3da3fd050bc489eeb/68747470733a2f2f6c696e6b74722e65652f6f672f696d6167652f736d6b7461676f6666696369616c2e6a7067" alt="Logo iPintar">
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo iPintar">
                 </div>
                 <h1>Temukan Pelatihan untuk Tingkatkan Kompetensi Anda</h1>
                 <form id="searchForm" class="search-form">
