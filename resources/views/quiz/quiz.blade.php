@@ -28,6 +28,9 @@
             width: 100%;
             margin-left: auto;
             margin-right: auto;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
             overflow: hidden;
             min-height: 50vh;
             /* display: flex; */
@@ -77,14 +80,6 @@
 <<<<<<< HEAD
         .logo img {
             height: 60px;
-<<<<<<< HEAD
-=======
-        .logo #quiz {
-            height: 200px;
->>>>>>> 7813c90 (update quiz dan navbar & route)
-            margin-bottom: 25px;
-=======
->>>>>>> 1e6cbc8 (memperbaiki navbar)
         }
 
         .hero-text h1 {
