@@ -14,16 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('component.navbar');
-});
-
-Route::get('/quiz', function () {
     return view('quiz.quiz');
 });
 
 Route::get('/navbar', function () {
     return view('component.navbar');
 });
+
 
 
 

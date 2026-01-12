@@ -77,11 +77,14 @@
 <<<<<<< HEAD
         .logo img {
             height: 60px;
+<<<<<<< HEAD
 =======
         .logo #quiz {
             height: 200px;
 >>>>>>> 7813c90 (update quiz dan navbar & route)
             margin-bottom: 25px;
+=======
+>>>>>>> 1e6cbc8 (memperbaiki navbar)
         }
 
         .hero-text h1 {
@@ -197,6 +200,7 @@
     </style>
 </head>
 <body>
+    @include('component.navbar')
     <section class="hero-section">
         <div class="container">
             <div class="hero-text">     
