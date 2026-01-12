@@ -22,9 +22,8 @@ body {
 
 .footer-inner {
   max-width: 1200px;
+  width:100%;
   margin: auto;
-  padding: 0 24px;
-
   position: relative; /* WAJIB */
   display: flex;
   align-items: center;

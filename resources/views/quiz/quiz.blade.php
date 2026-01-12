@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Aplikasi Pembelajaran Terpadu</title>
     <style>
-        /* CSS MURNI - TANPA FRAMEWORK */
         * {
             margin: 0;
             padding: 0;
@@ -72,6 +71,7 @@
         .hero-text {
             flex: 1;
             max-width: 600px;
+            
         }
 
 <<<<<<< HEAD
@@ -89,6 +89,7 @@
             line-height: 1.3;
             color: #000;
             margin-bottom: 30px;
+            font-family: var(--second-family);
             font-weight: 800;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
         }
@@ -196,7 +197,6 @@
     </style>
 </head>
 <body>
-    @include('component.navbar')
     <section class="hero-section">
         <div class="container">
             <div class="hero-text">     
@@ -219,8 +219,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             const searchForm = document.getElementById('searchForm');
             const searchInput = document.getElementById('searchInput');
-
-            // Handle form submission
             searchForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const searchTerm = searchInput.value.trim();

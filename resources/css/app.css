@@ -1,0 +1,17 @@
+/* resources/css/app.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+
+  --font-family: 'DM Sans', sans-serif;   
+  --second-family: 'Manrope', sans-serif; /* Digunakan untuk heading dan elemen penekanan */
+}
+
+body {
+  font-family: var(--font-family); /* Base font untuk seluruh halaman */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+

@@ -1,1 +1,6 @@
-@include('view.quiz')
+
+@include('component.navbar')
+
+@include('quiz.quiz')
+
+@include('component.footer')
