@@ -70,7 +70,6 @@
 
         .logo img {
             height: 60px;
-            margin-bottom: 25px;
         }
 
         .hero-text h1 {
@@ -185,6 +184,7 @@
     </style>
 </head>
 <body>
+    @include('component.navbar')
     <section class="hero-section">
         <div class="container">
             <div class="hero-text">
@@ -212,7 +212,7 @@
             searchForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const searchTerm = searchInput.value.trim();
-                
+
                 if (searchTerm.length < 3) {
                     alert('Kata kunci minimal 3 karakter!');
                     return;
@@ -221,10 +221,10 @@
                 // Contoh integrasi dengan Laravel
                 // Ganti URL sesuai route pencarian Anda
                 const searchUrl = `/cari?query=${encodeURIComponent(searchTerm)}`;
-                
+
                 // Untuk demo, kita hanya tampilkan alert
                 alert(`Mencari pelatihan dengan kata kunci:\n"${searchTerm}"`);
-                
+
                 // Uncomment baris berikut untuk redirect ke halaman pencarian
                 // window.location.href = searchUrl;
             });
