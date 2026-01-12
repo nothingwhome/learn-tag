@@ -21,11 +21,6 @@ Route::get('/quiz', function () {
     return view('quiz.quiz');
 });
 
-<<<<<<< HEAD
-Route::get('/quiz', function () {
-    return view('quiz.quiz');
-});
-=======
 Route::get('/navbar', function () {
     return view('component.navbar');
 });
@@ -35,4 +30,3 @@ Route::get('/navbar', function () {
 // Route::get('/home', function () {
 //     return view('home.index');
 // });
->>>>>>> 1e6cbc8 (memperbaiki navbar)
