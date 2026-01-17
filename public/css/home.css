@@ -1,0 +1,632 @@
+/* *{
+    outline: 1px solid red;
+} */
+
+.slider {
+    background: #b6e39a;
+    padding: 80px 0;
+ }
+
+#splideFirst .splide__slide {
+  opacity: 0.5;
+  transform: scale(0.85);
+  transition: all 0.4s ease;
+}
+
+#splideFirst .splide__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#splideFirst img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;   /* tengah vertikal */
+  justify-content: center; /* tengah horizontal */
+}
+
+.splide__slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+/* dots */
+.splide__pagination__page {
+  width: 22px;
+  height: 5px;
+  bottom: -30px;
+  border-radius: 2px;
+  background: white;
+  opacity: 0.5;
+}
+
+.splide__pagination__page.is-active {
+  background: #076a34;
+  opacity: 1;
+}
+
+.training-section {
+  padding: 60px 0;
+  background-color: #f4fff8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1f2937;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: auto;
+}
+
+.btn-card {
+  margin-top: 20px;
+  text-align: center;
+  padding: 12px;
+  background-color: #1f7a4d;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-card:hover {
+  background-color: #16613c;
+}
+
+/* === ANIMASI SAAT MUNCUL === */
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Delay biar muncul satu-satu */
+.card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ABOUT */
+.about-section {
+  padding: 85px 0;
+  background-color: #f4fff8;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2f3a40;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 32px;
+}
+
+.about-features {
+  display: flex;
+  gap: 32px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 260px;
+}
+
+.feature span {
+  font-weight: 600;
+  font-size: 15px;
+  color: #2f3a40;
+}
+
+/* ICON */
+.icon {
+  width: 80px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.icon i {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.icon.green {
+  background-color: #d1fae5;
+  color: #000000;
+}
+
+.icon.yellow {
+  background-color: #fef3c7;
+  color: #000000;
+}
+
+.about-image,
+.about-content {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aboutFade 0.8s ease forwards;
+}
+
+.about-content {
+  animation-delay: 0.2s;
+}
+
+@keyframes aboutFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TRAINING CSS */
+.latest-training {
+  padding: 70px 0;
+  background-color: #f4fff8;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.see-all {
+  color: #1f7a4d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* CARD */
+.training-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: .3s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.15);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #fdecc8;
+  color: #7a4b00;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.meta i {
+  color: #c59b60;
+  margin-right: 6px;
+}
+
+.btn-primary {
+  margin-top: auto;
+  text-align: center;
+  padding: 12px;
+  background: #1f7a4d;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Tombol panah */
+.splide__arrow {
+  width: 52px;
+  height: 52px;
+  background-color: #303231;
+  opacity: 60px;
+}
+
+.splide__arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+/* SECTION */
+.animate-section {
+  animation: sectionFade 0.8s ease forwards;
+}
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.training-clinic {
+  padding: 70px 0;
+  background-color: #f4fff8;
+}
+
+.section-header-clinic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.section-header-clinic h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.see-all-clinic {
+  color: #1f7a4d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* CARD */
+.clinic-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: .3s ease;
+}
+
+.clinic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.15);
+}
+
+.card-image-clinic {
+  position: relative;
+}
+
+.card-image-clinic img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.badge-clinic {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #fdecc8;
+  color: #7a4b00;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-body-clinic {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body-clinic h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.meta-clinic {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.meta-clinic i {
+  color: #c59b60;
+  margin-right: 6px;
+}
+
+.btn-primary-clinic {
+  margin-top: auto;
+  text-align: center;
+  padding: 12px;
+  background: #1f7a4d;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Tombol panah */
+.splide__arrow {
+  width: 52px;
+  height: 52px;
+  background-color: #303231;
+  opacity: 60px;
+}
+
+.splide__arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+/* SECTION */
+.animate-section {
+  animation: sectionFade 0.8s ease forwards;
+}
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.start-section {
+  background: #f4fff8;
+  padding: 80px 24px;
+}
+
+.start-container {
+  max-width: 1135px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* LEFT */
+.start-left h2 {
+  font-size: 47px;
+  line-height: 1.2;
+  color: #2f3b40;
+  margin-bottom: 20px;
+}
+
+.start-left h2 span {
+  font-weight: 700;
+}
+
+.start-left p {
+  color: #555;
+  max-width: 480px;
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #1f7a4d;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #16613c;
+}
+
+/* RIGHT */
+.start-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.stat-card .label {
+  color: #333;
+  font-size: 20px;
+}
+
+.stat-card .value {
+  font-size: 40px;
+  color: #0a7d3b;
+  margin-top: 10px;
+}
+
+.stat-card .icon {
+  position: absolute;
+  bottom: 2px;
+margin-left: 165px;
+  font-size: 36px;
+  color: #cfcfcf;
+}
+
+/* animasi masuk */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.start-left {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* card stats */
+.stat-card {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* delay biar muncul satu-satu */
+.stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.stat-card:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.stat-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.stat-card:nth-child(4) {
+  animation-delay: 0.55s;
+}
