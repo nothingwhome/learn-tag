@@ -24,7 +24,7 @@
             padding: 80px 20px;
             position: relative;
             overflow: hidden;
-            min-height: 100vh;
+            min-height: 50px;
             display: flex;
             align-items: center;
         }
@@ -58,7 +58,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 40px;
+            gap: 350px;
             position: relative;
             z-index: 2;
         }
@@ -69,7 +69,7 @@
         }
 
         .logo img {
-            height: 60px;
+            height: 40px;
         }
 
         .hero-text h1 {
@@ -184,12 +184,11 @@
     </style>
 </head>
 <body>
-    @include('component.navbar')
     <section class="hero-section">
         <div class="container">
             <div class="hero-text">
                 <div class="logo">
-                    <img src="https://camo.githubusercontent.com/4bdce6bd47a87e161c0a9ad6ed6b44399afd6d82bffe59c3da3fd050bc489eeb/68747470733a2f2f6c696e6b74722e65652f6f672f696d6167652f736d6b7461676f6666696369616c2e6a7067" alt="Logo iPintar">
+                    <img src="{{ asset('assets/img/logo.png') }}" alt="Logo iPintar" href="{{ url('/') }}">
                 </div>
                 <h1>Temukan Pelatihan untuk Tingkatkan Kompetensi Anda</h1>
                 <form id="searchForm" class="search-form">

@@ -44,6 +44,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  font-family: 'Nunito', sans-serif;
   pointer-events: none;
 }
 

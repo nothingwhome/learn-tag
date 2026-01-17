@@ -23,6 +23,7 @@ Route::get('/navbar', function () {
 
 
 
+
 // Route::get('/home', function () {
 //     return view('home.index');
 // });
