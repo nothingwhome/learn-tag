@@ -33,7 +33,14 @@
       <input type="text" id="searchInput" placeholder="Cari Pelatihan">
       <button id="searchBtn" class="fa-solid fa-search"></button>
     </div>
-    <button class="btn-login" id="loginBtn">Masuk</button>
+    @auth
+<form method="POST" action="{{ route('logout') }}">
+  @csrf
+  <button class="btn-logout">Logout</button>
+</form>
+@else
+    <a href="/login" class="btn-login">Masuk</a>
+@endauth
   </div>
 </nav>
 
