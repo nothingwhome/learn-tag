@@ -43,6 +43,7 @@ Route::get('/user', function () {
 })->middleware(['auth', 'role:user']);
 
 
+
 // Route::get('/home', function () {
 //     return view('home.index');
 // });
