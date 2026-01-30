@@ -1,2 +1,2 @@
 @include('views.quiz.quiz')
-@include('views.quiz.section1')
+@include('views.quiz.sectionquiz')
