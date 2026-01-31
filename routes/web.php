@@ -73,6 +73,30 @@ Route::delete('quizzes/{quiz}/questions/{question}',[QuestionsController::class,
 
 
 
+Route::get('/quizzes/start', [QuizzesController::class, 'start']);
+Route::get('/quizzes', [QuizzesController::class, 'index']);
+Route::post('/quizzes/check', [QuizzesController::class, 'check']);
+Route::get('/quizzes/result', [QuizzesController::class, 'result']);
+
+Route::middleware(['auth','admin'])->prefix('admin')->name('admin.')->group(function () {
+    Route::resource('quizzes', AdminQuizzesController::class);
+});
+
+Route::middleware(['auth','admin'])->prefix('admin')->name('admin.')->group(function () {
+Route::get('quizzes/{quiz}/questions',[QuestionsController::class,'index'])
+    ->name('quizzes.questions');
+Route::post('quizzes/{quiz}/questions',[QuestionsController::class,'store'])
+    ->name('quizzes.questions.  store');
+Route::get('quizzes/{quiz}/questions/{question}/edit',[QuestionsController::class,'edit'])
+    ->name('quizzes.questions.edit');
+Route::put('quizzes/{quiz}/questions/{question}',[QuestionsController::class,'update'])
+    ->name('quizzes.questions.update');
+Route::delete('quizzes/{quiz}/questions/{question}',[QuestionsController::class,'destroy'])
+    ->name('quizzes.questions.destroy');
+});
+
+
+
 
 Route::get('/section', function () {
     return view('quiz.sectionquiz');
