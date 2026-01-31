@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/pelatihan', function () {
-    return view('quiz.quiz');
+    return view('quiz.index');
 });
 
 Route::get('/navbar', function () {
@@ -41,6 +41,11 @@ Route::get('/admin', function () {
 Route::get('/user', function () {
     return view('home.index');
 })->middleware(['auth', 'role:user']);
+
+
+Route::get('/section', function () {
+    return view('quiz.sectionquiz');
+});
 
 
 
