@@ -6,70 +6,66 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    // view login
-    public function login()
+    public function showLoginForm()
     {
         return view('auth.login');
     }
 
-    // view register
-    public function register()
+    public function login(Request $request)
+    {
+        $credentials = $request->validate([
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('dashboard');
+        }
+
+        return back()->withErrors([
+            'username' => 'Username atau password salah.',
+        ]);
+    }
+
+    public function showRegisterForm()
     {
         return view('auth.register');
     }
 
-public function store(Request $request)
-{
-    $request->validate([
-        'name' => 'required',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|min:6'
-    ]);
+    public function register(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'username' => 'required|string|max:255|unique:users',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
 
-    User::create([
-        'name' => $request->name,
-        'email' => $request->email,
-        'password' => Hash::make($request->password),
-        'role' => 'user', // default
-    ]);
-
-    return redirect('/login')->with('success', 'Registrasi berhasil');
-}
-
-    // proses login
-    public function authenticate(Request $request)
-{
-    $credentials = $request->validate([
-        'email' => 'required|email',
-        'password' => 'required'
-    ]);
-
-    if (Auth::attempt($credentials)) {
-        $request->session()->regenerate();
-
-        if (Auth::user()->role === 'admin') {
-            return redirect('/admin');
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
         }
 
-        return redirect('/user');
+        User::create([
+            'name' => $request->name,
+            'username' => $request->username,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'role' => 'user',
+        ]);
+
+        return redirect()->route('login')->with('success', 'Registrasi berhasil! Silakan login.');
     }
 
-    return back()->withErrors([
-        'email' => 'Email atau password salah',
-    ]);
-}
-
-
-    // logout
     public function logout(Request $request)
     {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-
         return redirect('/');
     }
 }

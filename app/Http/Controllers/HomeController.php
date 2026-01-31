@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
     public function home()
     {
         $quizzes = Quiz::latest()->get();
         return view('home.index', compact('quizzes'));
     }
 }
+
