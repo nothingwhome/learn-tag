@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\QuizzesController;
 use App\Http\Controllers\Admin\AdminQuizzesController;
@@ -17,9 +18,7 @@ use App\Http\Controllers\Admin\QuestionsController;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/pelatihan', function () {
     return view('quiz.index');
@@ -41,14 +40,19 @@ Route::get('/admin', function () {
     return view('admin.index');
 })->middleware(['auth', 'role:admin']);
 
-Route::get('/user', function () {
-    return view('home.index');
-})->middleware(['auth', 'role:user']);
 
-Route::get('/quizzes/start', [QuizzesController::class, 'start']);
-Route::get('/quizzes', [QuizzesController::class, 'index']);
-Route::post('/quizzes/check', [QuizzesController::class, 'check']);
-Route::get('/quizzes/result', [QuizzesController::class, 'result']);
+Route::get('/user', [HomeController::class, 'home'])
+    ->middleware(['auth', 'role:user'])
+    ->name('user.home');
+
+Route::middleware(['user.only'])->group(function () {
+    Route::get('/quizzes', [QuizzesController::class, 'index']);
+    Route::post('/quizzes/check', [QuizzesController::class, 'check']);
+    Route::post('/quizzes/next', [QuizzesController::class, 'next']);
+    Route::get('/quizzes/result', [QuizzesController::class, 'result']);
+    Route::get('/quizzes/start/{quiz}', [QuizzesController::class, 'start']);
+});
+
 
 Route::middleware(['auth','admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('quizzes', AdminQuizzesController::class);
