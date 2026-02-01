@@ -79,10 +79,18 @@ Route::get('/section', function () {
 });
 
 
-Route::get('/quizzes/start', [QuizzesController::class, 'start']);
-Route::get('/quizzes', [QuizzesController::class, 'index']);
-Route::post('/quizzes/check', [QuizzesController::class, 'check']);
-Route::get('/quizzes/result', [QuizzesController::class, 'result']);
+Route::get('/user', [HomeController::class, 'home'])
+    ->middleware(['auth', 'role:user'])
+    ->name('user.home');
+
+Route::middleware(['user.only'])->group(function () {
+    Route::get('/quizzes', [QuizzesController::class, 'index']);
+    Route::post('/quizzes/check', [QuizzesController::class, 'check']);
+    Route::post('/quizzes/next', [QuizzesController::class, 'next']);
+    Route::get('/quizzes/result', [QuizzesController::class, 'result']);
+    Route::get('/quizzes/start/{quiz}', [QuizzesController::class, 'start']);
+});
+
 
 Route::middleware(['auth','admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::resource('quizzes', AdminQuizzesController::class);
