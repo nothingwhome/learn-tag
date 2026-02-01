@@ -24,6 +24,7 @@
   <ul class="nav-menu">
     <li><a href="{{ url('/pelatihan') }}">Pelatihan</a></li>
     <li><a href="#">Klinik Pengetahuan</a></li>
+    <li><a href="#">Contact</a></li>
   </ul>
 
   <!-- Right -->

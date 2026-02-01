@@ -125,119 +125,54 @@
             </div>
 
             <!-- SPLIDE -->
-            <div id="training-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <!-- SLIDE -->
-                        <li class="splide__slide">
-                            <div class="training-card">
-                                <div class="card-image">
-                                    <img src="{{ asset('assets/img/imgcontoh.jpg') }}">
-                                    <span class="badge">Angkatan I</span>
-                                </div>
+<div id="training-slider" class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
 
-                                <div class="card-body">
-                                    <h3>Pelatihan Pendidikan Inklusif Berjenjang...</h3>
+            @foreach ($quizzes as $quiz)
+            <li class="splide__slide">
+                <div class="training-card">
 
-                                    <div class="meta">
-                                        <span><i class="fa-regular fa-calendar"></i> 11 Des 2025 – 15 Des 2025</span>
-                                        <span><i class="fa-regular fa-user"></i> Peserta 50023</span>
-                                        <span><i class="fa-regular fa-star"></i> 4.9</span>
-                                    </div>
+                    <div class="card-image">
+                        <img src="{{ $quiz->image
+                            ? asset('storage/'.$quiz->image)
+                            : asset('assets/img/imgquiz.jpg') }}">
 
-                                    <a href="#" class="btn-primary">Lihat Selengkapnya</a>
-                                </div>
-                            </div>
-                        </li>
+                        <span class="badge">
+                            {{ $quiz->angkatan ?? 'Quiz' }}
+                        </span>
+                    </div>
 
-                        <!-- DUPLIKASI SLIDE -->
-                        <li class="splide__slide">
-                            <div class="training-card">
-                                <div class="card-image">
-                                    <img src="{{ asset('assets/img/imgcontoh.jpg') }}">
-                                    <span class="badge">Angkatan I</span>
-                                </div>
+                    <div class="card-body">
+                        <h3>{{ $quiz->title }}</h3>
 
-                                <div class="card-body">
-                                    <h3>Pelatihan Pendidikan Inklusif Berjenjang...</h3>
+                        <div class="meta">
+                            <span>
+                                <i class="fa-regular fa-calendar"></i>
+                                {{ $quiz->start_date ?? '-' }}
+                            </span>
 
-                                    <div class="meta">
-                                        <span><i class="fa-regular fa-calendar"></i> 11 Des 2025 – 15 Des 2025</span>
-                                        <span><i class="fa-regular fa-user"></i> Peserta 50023</span>
-                                        <span><i class="fa-regular fa-star"></i> 4.9</span>
-                                    </div>
+                            <span>
+                                <i class="fa-regular fa-user"></i>
+                                Soal {{ $quiz->questions_count ?? $quiz->questions->count() }}
+                            </span>
+                        </div>
 
-                                    <a href="#" class="btn-primary">Lihat Selengkapnya</a>
-                                </div>
-                            </div>
-                        </li>
+                        <!-- START QUIZ -->
+                        <a href="{{ url('/quizzes/start/'.$quiz->id) }}"
+                           class="btn-primary">
+                           Mulai Quiz
+                        </a>
+                    </div>
 
-                        <li class="splide__slide">
-                            <div class="training-card">
-                                <div class="card-image">
-                                    <img src="{{ asset('assets/img/imgcontoh.jpg') }}">
-                                    <span class="badge">Angkatan I</span>
-                                </div>
-
-                                <div class="card-body">
-                                    <h3>Pelatihan Pendidikan Inklusif Berjenjang...</h3>
-
-                                    <div class="meta">
-                                        <span><i class="fa-regular fa-calendar"></i> 11 Des 2025 – 15 Des 2025</span>
-                                        <span><i class="fa-regular fa-user"></i> Peserta 50023</span>
-                                        <span><i class="fa-regular fa-star"></i> 4.9</span>
-                                    </div>
-
-                                    <a href="#" class="btn-primary">Lihat Selengkapnya</a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="training-card">
-                                <div class="card-image">
-                                    <img src="{{ asset('assets/img/imgcontoh.jpg') }}">
-                                    <span class="badge">Angkatan I</span>
-                                </div>
-
-                                <div class="card-body">
-                                    <h3>Pelatihan Pendidikan Inklusif Berjenjang...</h3>
-
-                                    <div class="meta">
-                                        <span><i class="fa-regular fa-calendar"></i> 11 Des 2025 – 15 Des 2025</span>
-                                        <span><i class="fa-regular fa-user"></i> Peserta 50023</span>
-                                        <span><i class="fa-regular fa-star"></i> 4.9</span>
-                                    </div>
-
-                                    <a href="#" class="btn-primary">Lihat Selengkapnya</a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="training-card">
-                                <div class="card-image">
-                                    <img src="{{ asset('assets/img/imgcontoh.jpg') }}">
-                                    <span class="badge">Angkatan I</span>
-                                </div>
-
-                                <div class="card-body">
-                                    <h3>Pelatihan Pendidikan Inklusif Berjenjang...</h3>
-
-                                    <div class="meta">
-                                        <span><i class="fa-regular fa-calendar"></i> 11 Des 2025 – 15 Des 2025</span>
-                                        <span><i class="fa-regular fa-user"></i> Peserta 50023</span>
-                                        <span><i class="fa-regular fa-star"></i> 4.9</span>
-                                    </div>
-
-                                    <a href="#" class="btn-primary">Lihat Selengkapnya</a>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
                 </div>
-            </div>
+            </li>
+            @endforeach
+
+        </ul>
+    </div>
+</div>
+
         </div>
     </section>
 
