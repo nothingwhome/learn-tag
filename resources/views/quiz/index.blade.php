@@ -1,2 +1,4 @@
 @include('quiz.quiz')
-@include('quiz.sectionquiz')
+@include('quiz.card')
+{{-- @include('quiz.sectionquiz') --}}
+@include('component.footer')

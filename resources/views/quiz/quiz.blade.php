@@ -192,10 +192,6 @@
                     <img src="{{ asset('assets/img/logo.png') }}" alt="Logo iPintar">
                 </div>
                 <h1>Temukan Pelatihan untuk Tingkatkan Kompetensi Anda</h1>
-                <form id="searchForm" class="search-form">
-                    <input type="text" id="searchInput" placeholder="Cari Jadwal Pelatihan & Kelas Pelatihan...">
-                    <button type="submit">Cari</button>
-                </form>
             </div>
             <div class="hero-illustration">
                 <img src="https://th.bing.com/th/id/OIP.U1JM841c2wZgrqRSznfrngHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Ilustrasi Pelatihan">
