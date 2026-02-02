@@ -132,7 +132,7 @@
             max-width: 100%;
             height: auto;
             border-radius: 15px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); */
             transform: rotate(2deg);
             transition: transform 0.3s ease;
         }
@@ -194,7 +194,7 @@
                 <h1>Temukan Pelatihan untuk Tingkatkan Kompetensi Anda</h1>
             </div>
             <div class="hero-illustration">
-                <img src="https://th.bing.com/th/id/OIP.U1JM841c2wZgrqRSznfrngHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Ilustrasi Pelatihan">
+                <img src="https://mangoanimate.com/blog/wp-content/uploads/2023/05/Animated-Educational-Videos-for-Students-to-Learn-With-Fun.webp" alt="Ilustrasi Pelatihan">
             </div>
         </div>
     </section>

@@ -474,7 +474,7 @@
             </div>
 
             <!-- Search Box -->
-            <div class="search-section">
+            {{-- <div class="search-section">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" id="searchInput" placeholder="Cari modul..." class="search-input">
@@ -482,7 +482,7 @@
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Info jumlah pelatihan -->
             <div class="text-center">
@@ -498,26 +498,21 @@
                         <span class="angkatan-badge">Angkatan I</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/4299e1/ffffff?text=Programming" alt="Modul Programming">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5K08rKxUEHZsgxTHElnQc6bFEmuVzD6FUg&s" alt="Modul Programming">
                     </div>
                     <div class="module-content">
-                        <h2 class="module-title">Dasar-Dasar Programming untuk Pemula</h2>
+                        <h2 class="module-title">Dasar-Dasar HTML untuk Pemula</h2>
                         <div class="module-meta">
                             <div class="meta-item">
                                 <i class="fa-regular fa-calendar"></i>
-                                <span>10 Jan 2026 - 15 Jan 2026</span>
-                            </div>
-                            <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 15.234</span>
+                                <span>Mei 2021</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.8</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-programming.pdf" 
+                        <a href="https://digilib.stekom.ac.id/assets/dokumen/ebook/feb_292f912ab7e9b7bac101c87c197fe591cdd6b120_1648523336.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -530,26 +525,21 @@
                         <span class="angkatan-badge">Angkatan II</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/38a169/ffffff?text=HTML+CSS" alt="Modul HTML CSS">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://www.angon.co.id/wp-content/uploads/2023/10/1686539179.png" alt="Modul HTML CSS">
                     </div>
                     <div class="module-content">
-                        <h2 class="module-title">HTML & CSS Fundamental untuk Web Developer</h2>
+                        <h2 class="module-title">Laravel Dasar Pemula</h2>
                         <div class="module-meta">
                             <div class="meta-item">
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>18 Jan 2026 - 25 Jan 2026</span>
                             </div>
                             <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 23.456</span>
-                            </div>
-                            <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.9</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-html-css.pdf" 
+                        <a href="https://digilib.stekom.ac.id/assets/dokumen/ebook/feb_B8-GOdzvXQ0qiJqdyUjO6ryV7949c7dfgjGg8zeDkwjSqdYD-3nRT5A_1688373637.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -562,7 +552,7 @@
                         <span class="angkatan-badge">Angkatan III</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/d69e2e/ffffff?text=JavaScript" alt="Modul JavaScript">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3htWCtpgNMoEnv9w4zx4ZaEFZVjd7-uOlZw&s" alt="Modul JavaScript">
                     </div>
                     <div class="module-content">
                         <h2 class="module-title">JavaScript Advanced untuk Frontend Development</h2>
@@ -573,14 +563,14 @@
                             </div>
                             <div class="meta-item">
                                 <i class="fa-regular fa-user"></i>
-                                <span>Peserta 18.789</span>
+                                <span>M Sholikhan</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.7</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-javascript.pdf" 
+                        <a href="https://digilib.stekom.ac.id/assets/dokumen/ebook/feb_B8uLNNrqWgUrj5qdyUnK6ryV7949c7RdhjCs8T-AlAjSqdwF-nvQTpc_1682562390.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -593,19 +583,14 @@
                         <span class="angkatan-badge">Angkatan I</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/9f7aea/ffffff?text=Database" alt="Modul Database">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM91T1S4z84bTfnQg-ExIMn9MW_bs43wkg5g&s" alt="Modul Database">
                     </div>
                     <div class="module-content">
-                        <h2 class="module-title">Database Management System untuk Pemula</h2>
+                        <h2 class="module-title">Database SQL Untuk Pemula</h2>
                         <div class="module-meta">
                             <div class="meta-item">
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>15 Feb 2026 - 22 Feb 2026</span>
-                            </div>
-                            <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 12.345</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
@@ -625,25 +610,21 @@
                         <span class="angkatan-badge">Angkatan II</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/e53e3e/ffffff?text=Cybersecurity" alt="Modul Cybersecurity">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtuKkcgYrpv3UAUY-rYcO9dp_XjUjy67eVw&s" alt="Modul Cybersecurity">
                     </div>
                     <div class="module-content">
-                        <h2 class="module-title">Cybersecurity Basics untuk Keamanan IT</h2>
+                        <h2 class="module-title">Cybersecurity Basics Website untuk Keamanan IT</h2>
                         <div class="module-meta">
                             <div class="meta-item">
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>01 Mar 2026 - 08 Mar 2026</span>
                             </div>
                             <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 9.876</span>
-                            </div>
-                            <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.9</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-cybersecurity.pdf" 
+                        <a href="https://digilib.stekom.ac.id/assets/dokumen/ebook/feb_B8qGPNvrWwcthJqdyUnK67yV7949c7RdhjCs8z6ElAjSqdwF-njSTJc_1682562958.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -656,8 +637,8 @@
                         <span class="angkatan-badge">Angkatan III</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/3182ce/ffffff?text=Python" alt="Modul Python">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZqZkpMyiN2uSuT7GAf6JSkJ44YsZqoQHdw&s" alt="Modul Python">
+            
                     </div>
                     <div class="module-content">
                         <h2 class="module-title">Python Programming untuk Data Science</h2>
@@ -668,14 +649,14 @@
                             </div>
                             <div class="meta-item">
                                 <i class="fa-regular fa-user"></i>
-                                <span>Peserta 21.543</span>
+                                <span>Dr. Joseph Teguh Santoso, S.Kom, M.Kom</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.8</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-python.pdf" 
+                        <a href="https://digilib.stekom.ac.id/assets/dokumen/ebook/feb_2b476eab418c695cec15b3dc45a17efe95199a7e_1643162488.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -688,25 +669,21 @@
                         <span class="angkatan-badge">Angkatan I</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/dd6b20/ffffff?text=Laravel" alt="Modul Laravel">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkA7naATL6cBko2pKkiIVU0E1Xfm2xzAOvrQ&s" alt="Modul Laravel">
                     </div>
                     <div class="module-content">
-                        <h2 class="module-title">Laravel Framework untuk Backend Development</h2>
+                        <h2 class="module-title">PHP Untuk Pemula</h2>
                         <div class="module-meta">
                             <div class="meta-item">
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>20 Mar 2026 - 27 Mar 2026</span>
                             </div>
                             <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 16.789</span>
-                            </div>
-                            <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.7</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-laravel.pdf" 
+                        <a href="https://gilacoding.com/upload/file/PHP%20Dasar%20Tutorial.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -719,8 +696,8 @@
                         <span class="angkatan-badge">Angkatan II</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/805ad5/ffffff?text=ReactJS" alt="Modul React">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://indoittraining.com/wp-content/uploads/sites/3/2020/11/reactjs.png" alt="Modul React">
+                        
                     </div>
                     <div class="module-content">
                         <h2 class="module-title">ReactJS untuk Modern Web Applications</h2>
@@ -729,16 +706,13 @@
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>01 Apr 2026 - 08 Apr 2026</span>
                             </div>
-                            <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 19.234</span>
-                            </div>
+
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.9</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-react.pdf" 
+                        <a href="https://repositori.telkomuniversity.ac.id/pustaka/files/165642/ebook/menguasi-react-js-untuk-pemula.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -751,7 +725,7 @@
                         <span class="angkatan-badge">Angkatan III</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/2b6cb0/ffffff?text=NodeJS" alt="Modul NodeJS">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqN2QDHji5XloG3MOMWhy1JWFPXt1lQQIqZw&s" alt="Modul NodeJS">
                     </div>
                     <div class="module-content">
                         <h2 class="module-title">NodeJS untuk Backend JavaScript Development</h2>
@@ -762,14 +736,14 @@
                             </div>
                             <div class="meta-item">
                                 <i class="fa-regular fa-user"></i>
-                                <span>Peserta 14.567</span>
+                                <span>Yunia Ikawati</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.8</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-nodejs.pdf" 
+                        <a href="https://yunia.lecturer.pens.ac.id/Workshop%20Pemrograman%20Web/8-Node%20JS.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -782,26 +756,22 @@
                         <span class="angkatan-badge">Angkatan I</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/22543d/ffffff?text=VueJS" alt="Modul VueJS">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://www.tutorialspoint.com/css/images/css.png" alt="Modul VueJS">
+        
                     </div>
                     <div class="module-content">
-                        <h2 class="module-title">VueJS untuk Modern Frontend Development</h2>
+                        <h2 class="module-title">CSS Pemula Frontend Development</h2>
                         <div class="module-meta">
                             <div class="meta-item">
                                 <i class="fa-regular fa-calendar"></i>
                                 <span>01 Mei 2026 - 08 Mei 2026</span>
                             </div>
                             <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 11.234</span>
-                            </div>
-                            <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.7</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-vuejs.pdf" 
+                        <a href="https://ocw.upj.ac.id/files/Handout-INF104-INF104-Pertemuan-6.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -814,7 +784,7 @@
                         <span class="angkatan-badge">Angkatan II</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/2c5282/ffffff?text=Docker" alt="Modul Docker">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmJsm6luiQGd54b5qITrZlN1igMfb-XWcyaw&s" alt="Modul Docker">
                     </div>
                     <div class="module-content">
                         <h2 class="module-title">Docker untuk Containerization Applications</h2>
@@ -825,14 +795,14 @@
                             </div>
                             <div class="meta-item">
                                 <i class="fa-regular fa-user"></i>
-                                <span>Peserta 8.901</span>
+                                <span>Yunia Ikawati</span>
                             </div>
                             <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.9</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-docker.pdf" 
+                        <a href="https://lmsspada.kemdiktisaintek.go.id/pluginfile.php/704477/mod_resource/content/1/Modul%203%20Docker.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
@@ -845,8 +815,7 @@
                         <span class="angkatan-badge">Angkatan III</span>
                     </div>
                     <div class="module-image">
-                        <img src="https://via.placeholder.com/300x200/7442c0/ffffff?text=AWS" alt="Modul AWS">
-                        <div class="selesai-label">SELESAI</div>
+                        <img src="https://hystax.com/wp-content/uploads/2024/01/Advantages-and-limitations-of-embracing-AWS-as-a-cloud-infrastructure-1200x675.webp" alt="Modul AWS">>
                     </div>
                     <div class="module-content">
                         <h2 class="module-title">AWS Cloud Computing untuk Pemula</h2>
@@ -856,15 +825,11 @@
                                 <span>01 Jun 2026 - 08 Jun 2026</span>
                             </div>
                             <div class="meta-item">
-                                <i class="fa-regular fa-user"></i>
-                                <span>Peserta 17.654</span>
-                            </div>
-                            <div class="meta-item">
                                 <i class="fa-solid fa-star"></i>
                                 <span>4.8</span>
                             </div>
                         </div>
-                        <a href="https://example.com/files/modul-aws.pdf" 
+                        <a href="https://pdfs.semanticscholar.org/fb7d/4f04cd497f89594ee408962b7ddf0a615b83.pdf" 
                            class="module-button" target="_blank">
                             <i class="fa-solid fa-download"></i> Unduh Modul
                         </a>
